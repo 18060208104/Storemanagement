@@ -99,7 +99,6 @@
 
 	<script type="text/javascript" src="/resources/layui/layui.js"></script>
 	<script type="text/javascript" src="/resources/js/cache.js"></script>
-	
 	<script type="text/javascript">
 	var $,tab,dataStr,layer;
 	layui.config({
@@ -114,6 +113,7 @@
 	    	layer = parent.layer === undefined ? layui.layer : top.layer;
 			tab = layui.bodyTab({
 				openTabNum : "50",  //最大可打开窗口数量
+				 // url : "/resources/json/navs2.json"
 				url : "/menu/loadIndexLeftMenuJson" //获取菜单json地址
 			});
 

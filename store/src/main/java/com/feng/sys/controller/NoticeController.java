@@ -26,9 +26,7 @@ import com.feng.sys.vo.NoticeVo;
  * <p>
  *  前端控制器
  * </p>
- *
- * @author 老雷
- * @since 2019-09-21
+
  */
 @RestController
 @RequestMapping("/notice")

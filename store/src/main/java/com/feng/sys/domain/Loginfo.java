@@ -1,41 +1,25 @@
 package com.feng.sys.domain;
 
-import java.io.Serializable;
-import java.util.Date;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-/**
- * <p>
- * 
- * </p>
- *
- *
- */
+import java.io.Serializable;
+import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("sys_notice")
-public class Notice implements Serializable {
-
-    private static final long serialVersionUID=1L;
-
-    @TableId(value = "id", type = IdType.AUTO)
+@TableName("sys_loginfo")
+public class Loginfo implements Serializable {
+    private static final  long serialVersionUID=1L;
+    @TableId(value = "id",type= IdType.AUTO)
     private Integer id;
 
-    private String title;
-
-    private String content;
-
-    private Date createtime;
-
-    private String opername;
-
-
+    private String loginname;
+    private String loginip;
+    private Date logintime;
 }

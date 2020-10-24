@@ -146,9 +146,9 @@
 		//删除
 		function deleteInfo(data){
 			layer.confirm('你确定要删除这条数据吗?', {icon: 3, title:'提示'}, function(index){
-				$.post("/loginfo/deleteLoginfo",{id:data.id},function(res){
+				$.post("/loginfo/deleteLoginfo",{id:data.id},function(res){  //向后端发一个post请求
 					if(res.code==200){
-						tableIns.reload();
+						tableIns.reload();  //删除完重新加载当前文档
 					}
 					layer.msg(res.msg);
 				})	
