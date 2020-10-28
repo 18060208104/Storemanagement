@@ -30,7 +30,7 @@ public class LoginfoController {
     public DataGridView loadAllLoginfo(LoginfoVo loginfoVo){
         IPage<Loginfo> page = new Page<>(loginfoVo.getPage(),loginfoVo.getLimit());
         QueryWrapper<Loginfo> queryWrapper = new QueryWrapper<>();//batisplus的查询操作
-      //模糊查询
+      //模糊查询          当条件不为false  表示该条件是否加入最后生成的sql中
         queryWrapper.like(StringUtils.isNotBlank(loginfoVo.getLoginname()),"loginname", loginfoVo.getLoginname());
 
         queryWrapper.like(StringUtils.isNotBlank(loginfoVo.getLoginip()), "loginip",loginfoVo.getLoginip());
@@ -40,7 +40,7 @@ public class LoginfoController {
         //按照时间排序
         queryWrapper.orderByDesc("logintime");
 
-        this.loginfoService.page(page, queryWrapper);
+        this.loginfoService.page(page, queryWrapper);  //page就是一个全查询 querywarpper为条件构造器 可以为空
 
         return new DataGridView(page.getTotal(),page.getRecords());  //查看类DataGridView构造方法
 
@@ -105,5 +105,6 @@ public class LoginfoController {
             return ResultObj.DELETE_ERROR;
         }
     }
+
 
 }

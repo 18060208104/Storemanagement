@@ -54,5 +54,48 @@ public class SystemController {
 	public String toNoticeManager() {
 		return "system/notice/noticeManager";
 	}
-	
+/*
+* 跳转到部门管理
+*
+* */
+ @RequestMapping("toDeptManager")
+	public String toDeptManager(){
+ 	return "system/dept/deptManager";
+ }
+ /*
+   跳转到部门管理 --right
+ *  */
+ @RequestMapping("toDeptRight")
+	public String  toDeptRight(){
+ 	return "system/dept/deptRight";
+ }
+	/*
+      跳转到部门管理 --left
+    *  */
+	@RequestMapping("toDeptLeft")
+	public String  toDeptLeft() {
+		return "system/dept/deptLeft";
+	}
+	/*
+	 * 跳转到菜单管理
+	 *
+	 * */
+	@RequestMapping("toMenuManager")
+	public String toPermissionManager(){
+		return "system/menu/menuManager";
+	}
+	/*
+         跳转到菜单管理 --left
+       *  */
+	@RequestMapping("toMenuLeft")
+	public String  toPermissionLeft() {
+		return "system/menu/menuLeft";
+	}
+	/*
+   跳转到菜单管理 --right
+ *  */
+	@RequestMapping("toMenuRight")
+	public String  toPermissionRight(){
+		return "system/menu/menuRight";
+	}
 }

@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  *  前端控制器
  * </p>
  *
- * @author 老雷
- * @since 2019-09-20
+
  */
 @RestController
 @RequestMapping("/sys/user")

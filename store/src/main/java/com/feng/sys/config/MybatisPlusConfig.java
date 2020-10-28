@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 
 /**
  * mybatisplus的配置类
- * @author LJH
+
  *
  */
 @Configuration

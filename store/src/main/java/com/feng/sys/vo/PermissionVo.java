@@ -11,8 +11,8 @@ public class PermissionVo extends Permission{/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-	
+     Integer page =1;
+     Integer limit=10;
 	
 	
 }
