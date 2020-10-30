@@ -60,7 +60,7 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
 
 
-        strategy.setInclude("sys_dept");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
+        strategy.setInclude("sys_role");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
 
 
         strategy.setNaming(NamingStrategy.underline_to_camel);//驼峰命名
