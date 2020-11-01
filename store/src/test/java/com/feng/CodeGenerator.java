@@ -48,7 +48,7 @@ public class CodeGenerator {
         mpg.setDataSource(dsc);
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("sys");
+        pc.setModuleName("bus");
         pc.setParent("com.feng");
         pc.setEntity("domain");
         pc.setService("service");
@@ -60,7 +60,7 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
 
 
-        strategy.setInclude("sys_role");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
+        strategy.setInclude("bus_customer");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
 
 
         strategy.setNaming(NamingStrategy.underline_to_camel);//驼峰命名
