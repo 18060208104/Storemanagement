@@ -14,4 +14,25 @@ public class BusinessController {
 	public String  toCustomerManager(){
 		return "business/customer/customerManager";
 	}
+	/*
+	跳转到供应商管理
+    */
+	@RequestMapping("toProviderManager")
+	public String  toProviderManager(){
+		return "business/provider/providerManager";
+	}
+	/*
+	跳转到商品管理
+    */
+	@RequestMapping("toGoodsManager")
+	public String  toGoodsManager(){
+		return "business/goods/goodsManager";
+	}
+	/*
+	跳转到进货管理
+    */
+	@RequestMapping("toInportManager")
+	public String  toInportManager(){
+		return "business/inport/inportManager";
+	}
 }
