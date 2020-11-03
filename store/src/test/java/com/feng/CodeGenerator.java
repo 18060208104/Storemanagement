@@ -60,7 +60,7 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
 
 
-        strategy.setInclude("bus_inport");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
+        strategy.setInclude("bus_outport");//设置要映射的表  对应数据库的表 就可以直接生成一系列方法
 
 
         strategy.setNaming(NamingStrategy.underline_to_camel);//驼峰命名
